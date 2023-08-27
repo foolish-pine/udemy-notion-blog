@@ -2,11 +2,11 @@ import { SinglePost } from "@/components/Post/SinglePost";
 import { getAllPosts } from "@/lib/notionAPI";
 import Head from "next/head";
 
-type Post = {
+export type Post = {
   id: string;
   title: string;
   description: string;
-  data: string;
+  date: string;
   slug: string;
   tags: string[];
 };
